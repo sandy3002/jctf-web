@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>File Viewer</title>
+    <style>
+        body {
+            background-image: url('https://c4.wallpaperflare.com/wallpaper/828/296/58/harry-potter-hogwarts-castle-wallpaper-preview.jpg'); /* Replace 'your-image.jpg' with the path to your background image */
+            background-size: cover; /* This will make the image cover the entire body */
+            background-repeat: no-repeat; /* Prevent the image from repeating */
+            background-attachment: fixed; /* Keep the image fixed while scrolling */
+        }
+
+        /* Additional CSS styles for centering the form and text */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background to the form */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow to the form */
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/files" method="get">
+        <label for="file_id">Enter File ID:</label>
+        <input type="text" name="file_id" id="file_id" placeholder="File ID">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
